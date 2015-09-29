@@ -1,0 +1,43 @@
+mongodb:
+  # used to be mongodb
+  mongodb_package: mongodb-org
+  mongos_package: mongos
+  pip: python-pip
+  # Changed from mongodb to mongod - had to do this so that the binary could
+  # be found
+  mongod: mongod
+
+  conf_path: /etc/mongodb.conf
+  log_path: /var/log/mongodb
+  db_path: /data/db
+  use_repo: False
+  use_ppa: False
+  # used to be: main
+  # is map.jinja resolving mutations to these defaults correctly?
+  repo_component: multiverse
+
+  config_svr: False
+  shard_svr: True
+
+  replica_set:
+    name: null
+
+  storage_engine: null
+
+  settings:
+    port: 27017
+    bind_ip: 127.0.0.1
+
+mongos:
+  mongos_package: mongos
+  log_path: /var/log/mongos
+  log_file: /var/log/mongos/mongos.log
+  conf_path: /etc/mongodb.conf
+  mongos: mongos
+
+  use_repo: False
+  use_ppa: False
+
+  settings:
+    port: 27017
+    config_svrs: ""

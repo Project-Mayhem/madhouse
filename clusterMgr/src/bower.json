@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "name": "clusterMgr",
+  "version": "0.0.0",
+  "author": "vagrant",
+  "private": true
+}

@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 warn package.json madhouse@0.1.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/vagrant',
+7 verbose install   [ 'bower',
+7 verbose install     'grunt',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-nodeunit',
+7 verbose install     'grunt-contrib-uglify' ] ]
+8 info preinstall madhouse@0.1.0
+9 warn package.json sails-generate-bower@0.0.2 No repository field.
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping bower@^1.5.2 /vagrant
+12 verbose already installed skipping grunt@~0.4.5 /vagrant
+13 verbose already installed skipping grunt-contrib-jshint@~0.11.3 /vagrant
+14 verbose already installed skipping grunt-contrib-nodeunit@~0.4.1 /vagrant
+15 verbose already installed skipping grunt-contrib-uglify@~0.9.2 /vagrant
+16 silly resolved []
+17 info build /vagrant
+18 verbose linkStuff [ false, false, false, '/' ]
+19 info linkStuff madhouse@0.1.0
+20 verbose linkBins madhouse@0.1.0
+21 verbose linkMans madhouse@0.1.0
+22 verbose rebuildBundles madhouse@0.1.0
+23 verbose rebuildBundles [ '.bin',
+23 verbose rebuildBundles   'bower',
+23 verbose rebuildBundles   'grunt',
+23 verbose rebuildBundles   'grunt-contrib-jshint',
+23 verbose rebuildBundles   'grunt-contrib-nodeunit',
+23 verbose rebuildBundles   'grunt-contrib-uglify',
+23 verbose rebuildBundles   'sails',
+23 verbose rebuildBundles   'sails-generate-bower' ]
+24 verbose rebuild bundle /vagrant/node_modules/sails
+25 info build /vagrant/node_modules/sails
+26 info preinstall sails@0.11.0
+27 verbose unsafe-perm in lifecycle false
+28 verbose linkStuff [ false, false, false, '/vagrant/node_modules' ]
+29 info linkStuff sails@0.11.0
+30 verbose linkBins sails@0.11.0
+31 verbose link bins [ { sails: './bin/sails.js' },
+31 verbose link bins   '/vagrant/node_modules/.bin',
+31 verbose link bins   false ]
+32 verbose linkMans sails@0.11.0
+33 verbose rebuildBundles sails@0.11.0
+34 verbose rebuildBundles [ '.bin',
+34 verbose rebuildBundles   'anchor',
+34 verbose rebuildBundles   'async',
+34 verbose rebuildBundles   'captains-log',
+34 verbose rebuildBundles   'colors',
+34 verbose rebuildBundles   'commander',
+34 verbose rebuildBundles   'connect-flash',
+34 verbose rebuildBundles   'cookie',
+34 verbose rebuildBundles   'cookie-signature',
+34 verbose rebuildBundles   'ejs',
+34 verbose rebuildBundles   'ejs-locals',
+34 verbose rebuildBundles   'express',
+34 verbose rebuildBundles   'express-handlebars',
+34 verbose rebuildBundles   'fs-extra',
+34 verbose rebuildBundles   'glob',
+34 verbose rebuildBundles   'grunt',
+34 verbose rebuildBundles   'grunt-cli',
+34 verbose rebuildBundles   'grunt-contrib-clean',
+34 verbose rebuildBundles   'grunt-contrib-coffee',
+34 verbose rebuildBundles   'grunt-contrib-concat',
+34 verbose rebuildBundles   'grunt-contrib-copy',
+34 verbose rebuildBundles   'grunt-contrib-cssmin',
+34 verbose rebuildBundles   'grunt-contrib-jst',
+34 verbose rebuildBundles   'grunt-contrib-less',
+34 verbose rebuildBundles   'grunt-contrib-uglify',
+34 verbose rebuildBundles   'grunt-contrib-watch',
+34 verbose rebuildBundles   'grunt-sails-linker',
+34 verbose rebuildBundles   'grunt-sync',
+34 verbose rebuildBundles   'i18n',
+34 verbose rebuildBundles   'include-all',
+34 verbose rebuildBundles   'lodash',
+34 verbose rebuildBundles   'merge-defaults',
+34 verbose rebuildBundles   'method-override',
+34 verbose rebuildBundles   'mock-req',
+34 verbose rebuildBundles   'mock-res',
+34 verbose rebuildBundles   'node-uuid',
+34 verbose rebuildBundles   'pluralize',
+34 verbose rebuildBundles   'prompt',
+34 verbose rebuildBundles   'rc',
+34 verbose rebuildBundles   'reportback',
+34 verbose rebuildBundles   'sails-build-dictionary',
+34 verbose rebuildBundles   'sails-disk',
+34 verbose rebuildBundles   'sails-generate',
+34 verbose rebuildBundles   'sails-hook-sockets',
+34 verbose rebuildBundles   'sails-stringfile',
+34 verbose rebuildBundles   'sails-util',
+34 verbose rebuildBundles   'semver',
+34 verbose rebuildBundles   'skipper',
+34 verbose rebuildBundles   'uid-safe',
+34 verbose rebuildBundles   'waterline' ]
+35 error Error: UNKNOWN, symlink '../sails/bin/sails.js'
+36 error If you need help, you may report this *entire* log,
+36 error including the npm and node versions, at:
+36 error     <http://github.com/npm/npm/issues>
+37 error System Linux 3.2.0-23-generic
+38 error command "/usr/bin/node" "/usr/bin/npm" "install"
+39 error cwd /vagrant
+40 error node -v v0.10.37
+41 error npm -v 1.4.28
+42 error path ../sails/bin/sails.js
+43 error code UNKNOWN
+44 error errno -1
+45 verbose exit [ -1, true ]

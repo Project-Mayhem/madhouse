@@ -1,8 +1,19 @@
-master: localhost
+# master: 127.0.0.1
+# id: 1
+# Sets the minion to look locally for state - this means masterless.
+# Normally, file_client: remote identifies a master / slave configuration
+# file_client: remote
 file_client: local
-mysql.host: 'localhost'
-mysql.port: 3306
-mysql.user: 'root'
-mysql.pass: ''
-mysql.db: 'mysql'
-mysql.unix_socket: '/var/run/mysqld/mysqld.sock'
+grains:
+  roles:
+    - development
+  deployment: vagrant
+  cabinet: 0
+  cab_u: 0
+  os: Ubuntu
+  code: precise
+  oscodename: precise
+  architecture: x86_64
+  VCPU: 1
+  CPU: 0
+  memoryInMB: 512
