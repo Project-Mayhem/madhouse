@@ -29,11 +29,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	#
 	# This plugin is deprecated, but it is the only one that supports masterless
 	# functioning, that is, it passes the --local option when envoking salt-call commands
-	config.vm.provision :salt do |salt|
-		salt.minion_config = "srv/minion"
-		salt.run_highstate = false
+	#config.vm.provision :salt do |salt|
+	#	salt.minion_config = "srv/minion"
+	#	salt.run_highstate = false
 		# salt.masterless = true
-	end
+	#end
 
 	# bootstrap to fix things right now.  Version of salt installed by Vagrant is too old
 	config.vm.provision "shell", path: "bootstrap.sh"
